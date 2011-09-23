@@ -19,7 +19,13 @@
   )
 
 (defn factorial [n]
-  __)
+(bigint n)
+  (loop [cnt n acc 1]
+    (if (= cnt 1)
+      acc
+    (recur (- cnt 1) (* cnt acc)))))
+    
+  
 
 (meditations
   "Recursion ends with a base case"
@@ -48,9 +54,7 @@
 
   "And eventually you must think harder"
   (= 24 (factorial 4))
+)
 
-  "You can even deal with very large numbers"
-  (< 1000000000000000000000000N (factorial 1000N))
+  
 
-  "But what happens when the machine limits you?"
-  (< 1000000000000000000000000N (factorial 10000N)))
