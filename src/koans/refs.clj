@@ -3,7 +3,7 @@
 
 (meditations
   "In the beginning, there was a word"
-  (= __ (deref the-world))
+  (= "hello" (deref the-world))
 
   "You can get the word more succinctly, but it's the same"
   (= __ @the-world)
