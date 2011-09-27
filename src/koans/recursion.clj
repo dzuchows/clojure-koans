@@ -1,11 +1,11 @@
 (defn is-even? [n]
   (if (= n 0)
-      true
+   true 
       (not (is-even? (dec n) ))))
 
 (defn is-even-bigint? [n]
   (loop [n   n
-         acc true]
+        acc true]
     (if (= n 0)
         acc
         (recur (dec n) (not acc)))))
