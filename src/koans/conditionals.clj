@@ -28,9 +28,9 @@
 
   "You may have a multitude of possible paths"
   (let [x 5]
-    (= :your_road (cond (= x 6) :road_not_taken
-                        (= x 7) :another_road_not_taken
-                        :else :your_road)))
+    (= :your-road (cond (= x 6) :road-not-taken
+                        (= x 7) :another-road-not-taken
+                        :else :your-road)))
 
   "Or your fate may be sealed"
   (= 'doom (if-not (zero? 1)
